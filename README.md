@@ -1,14 +1,18 @@
 # Portfólio Profissional
 
-Este é o meu portfólio profissional, desenvolvido com HTML, CSS (Tailwind CSS) e JavaScript.
+Este é o meu portfólio profissional, desenvolvido com HTML5, HTMX e CSS (Tailwind CSS).
 
 ## Características
 
-- Design responsivo
-- Interface moderna e limpa
-- Animações suaves
+- Design responsivo e moderno
+- Interface interativa sem botões
+- Animações suaves e elegantes
+- Carregamento dinâmico de conteúdo com HTMX
 - Seções para apresentação, projetos e contato
 - Integração com LinkedIn
+- Efeitos de hover e transições
+- Scroll suave
+- Animações de entrada nas seções
 
 ## Como Visualizar
 
@@ -18,13 +22,14 @@ Este é o meu portfólio profissional, desenvolvido com HTML, CSS (Tailwind CSS)
 ## Tecnologias Utilizadas
 
 - HTML5
+- HTMX para interatividade
 - CSS3 (Tailwind CSS)
-- JavaScript
+- JavaScript (Intersection Observer API)
 - SVG para ícones
 
 ## Hospedagem
 
-Este portfólio está hospedado no GitHub Pages e pode ser acessado em: [https://seu-usuario.github.io/portfolio-profissional/](https://seu-usuario.github.io/portfolio-profissional/)
+Este portfólio está hospedado no GitHub Pages e pode ser acessado em: [https://edmilsonve.github.io/Portfolio/](https://edmilsonve.github.io/Portfolio/)
 
 ## Contato
 

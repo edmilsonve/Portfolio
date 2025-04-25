@@ -5,28 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Edmilson Borges</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
     <style>
         /* Adicionando estilos personalizados */
         .hero-section {
             background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
             color: white;
         }
+        .project-card {
+            transition: all 0.3s ease;
+        }
         .project-card:hover {
             transform: translateY(-5px);
-            transition: transform 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #2c5282;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .section-content {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+        .section-content.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100" hx-boost="true">
     <!-- Cabeçalho -->
     <header class="bg-white shadow-md fixed w-full top-0 z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <h1 class="text-2xl font-bold text-gray-800">Edmilson Borges</h1>
                 <div class="space-x-6">
-                    <a href="#sobre" class="text-gray-600 hover:text-gray-900">Sobre</a>
-                    <a href="#projetos" class="text-gray-600 hover:text-gray-900">Projetos</a>
-                    <a href="#contato" class="text-gray-600 hover:text-gray-900">Contato</a>
+                    <a href="#sobre" class="nav-link text-gray-600 hover:text-gray-900">Sobre</a>
+                    <a href="#projetos" class="nav-link text-gray-600 hover:text-gray-900">Projetos</a>
+                    <a href="#contato" class="nav-link text-gray-600 hover:text-gray-900">Contato</a>
                 </div>
             </div>
         </nav>
@@ -34,12 +63,22 @@
 
     <!-- Hero Section -->
     <section class="hero-section min-h-screen flex items-center justify-center">
-        <div class="text-center px-6">
+        <div class="text-center px-6 section-content">
             <h2 class="text-5xl font-bold text-white mb-4">Desenvolvedor Full Stack</h2>
             <p class="text-xl text-gray-200 mb-8">Transformando ideias em soluções digitais inovadoras</p>
-            <a href="#contato" class="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors font-semibold">
-                Entre em Contato
-            </a>
+            <div class="flex justify-center space-x-4">
+                <a href="#contato" class="text-white hover:text-gray-200 transition-colors">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/edmilson-borges-36362871/" target="_blank" class="text-white hover:text-gray-200 transition-colors">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -47,21 +86,59 @@
     <section id="sobre" class="bg-white py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Sobre Mim</h2>
-            <div class="max-w-3xl mx-auto text-gray-600">
+            <div class="max-w-3xl mx-auto text-gray-600 section-content">
                 <p class="mb-4 text-lg">
                     Desenvolvedor Full Stack com experiência em desenvolvimento de aplicações web e mobile.
                     Especialista em criar soluções robustas e escaláveis utilizando tecnologias modernas.
                 </p>
-                <p class="text-lg">
-                    Minhas principais habilidades incluem:
-                </p>
-                <ul class="list-disc pl-5 mt-2 space-y-2">
-                    <li>Desenvolvimento Front-end (React, Vue.js, Angular)</li>
-                    <li>Desenvolvimento Back-end (Node.js, Python, Java)</li>
-                    <li>Bancos de dados (SQL, NoSQL)</li>
-                    <li>DevOps e Cloud Computing</li>
-                    <li>Metodologias Ágeis</li>
-                </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4">Habilidades Técnicas</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Front-end (React, Vue.js, Angular)
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Back-end (Node.js, Python, Java)
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Bancos de dados (SQL, NoSQL)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4">Metodologias</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                DevOps e Cloud Computing
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Metodologias Ágeis
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Arquitetura de Software
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -72,7 +149,10 @@
             <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Projetos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Projeto 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden project-card">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden project-card" 
+                     hx-get="/projeto/1" 
+                     hx-trigger="mouseenter"
+                     hx-target="#projeto-detalhes">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-800 mb-2">Sistema de Gestão</h3>
                         <p class="text-gray-600">Desenvolvimento de sistema completo de gestão empresarial com interface moderna e responsiva.</p>
@@ -80,7 +160,10 @@
                 </div>
 
                 <!-- Projeto 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden project-card">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden project-card"
+                     hx-get="/projeto/2"
+                     hx-trigger="mouseenter"
+                     hx-target="#projeto-detalhes">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-800 mb-2">Aplicativo Mobile</h3>
                         <p class="text-gray-600">Desenvolvimento de aplicativo mobile com integração de serviços em nuvem.</p>
@@ -88,13 +171,17 @@
                 </div>
 
                 <!-- Projeto 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden project-card">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden project-card"
+                     hx-get="/projeto/3"
+                     hx-trigger="mouseenter"
+                     hx-target="#projeto-detalhes">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-800 mb-2">API RESTful</h3>
                         <p class="text-gray-600">Desenvolvimento de API RESTful com documentação Swagger e testes automatizados.</p>
                     </div>
                 </div>
             </div>
+            <div id="projeto-detalhes" class="mt-8"></div>
         </div>
     </section>
 
@@ -104,14 +191,21 @@
             <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Contato</h2>
             <div class="max-w-lg mx-auto">
                 <div class="flex flex-col space-y-6">
-                    <a href="mailto:edmilson.borges@exemplo.com" class="flex items-center text-gray-600 hover:text-gray-900 text-lg">
+                    <a href="mailto:edmilson.borges@exemplo.com" 
+                       class="flex items-center text-gray-600 hover:text-gray-900 text-lg transition-colors"
+                       hx-get="/contato/email"
+                       hx-trigger="mouseenter">
                         <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                         </svg>
                         edmilson.borges@exemplo.com
                     </a>
-                    <a href="https://www.linkedin.com/in/edmilson-borges-36362871/" target="_blank" class="flex items-center text-gray-600 hover:text-gray-900 text-lg">
+                    <a href="https://www.linkedin.com/in/edmilson-borges-36362871/" 
+                       target="_blank" 
+                       class="flex items-center text-gray-600 hover:text-gray-900 text-lg transition-colors"
+                       hx-get="/contato/linkedin"
+                       hx-trigger="mouseenter">
                         <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
                         </svg>
@@ -138,6 +232,21 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Adicionando animação de entrada para as seções
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.section-content').forEach(section => {
+            observer.observe(section);
         });
     </script>
 </body>
