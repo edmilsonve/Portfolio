@@ -1,0 +1,392 @@
+[
+  {
+    "nome_da_ferramenta": "Gamma",
+    "link": "https://gamma.app/pt-br",
+    "classe_da_ferramenta": "Apresentações",
+    "descricao": "Ferramenta que utiliza IA para criar apresentações, documentos e páginas da web a partir de comandos de texto."
+  },
+  {
+    "nome_da_ferramenta": "Infografix",
+    "link": "https://infografix.app/",
+    "classe_da_ferramenta": "Apresentações",
+    "descricao": "Ferramenta para criar infográficos, relatórios e outros materiais visuais de forma simples."
+  },
+  {
+    "nome_da_ferramenta": "HARPA.AI",
+    "link": "https://harpa.ai/",
+    "classe_da_ferramenta": "Automação",
+    "descricao": "Extensão para Chrome que usa IA para automatizar tarefas na web, resumir páginas, extrair dados e criar conteúdo."
+  },
+  {
+    "nome_da_ferramenta": "Make Academy",
+    "link": "https://academy.make.com/",
+    "classe_da_ferramenta": "Automação",
+    "descricao": "Plataforma de aprendizado para a ferramenta de automação Make, que conecta aplicativos e automatiza fluxos de trabalho."
+  },
+  {
+    "nome_da_ferramenta": "ManyChat",
+    "link": "https://manychat.com/",
+    "classe_da_ferramenta": "Automação",
+    "descricao": "Plataforma para criar chatbots e automatizar conversas no Instagram, Facebook Messenger e WhatsApp."
+  },
+  {
+    "nome_da_ferramenta": "N8N",
+    "link": null,
+    "classe_da_ferramenta": "Automação",
+    "descricao": null
+  },
+  {
+    "nome_da_ferramenta": "Runner",
+    "link": "https://runner.hcompany.ai/",
+    "classe_da_ferramenta": "Desconhecido",
+    "descricao": "A finalidade específica desta ferramenta não é clara a partir do link (acesso restrito ou projeto específico)."
+  },
+  {
+    "nome_da_ferramenta": "Streamlit",
+    "link": "https://streamlit.io/",
+    "classe_da_ferramenta": "Desenvolvimento",
+    "descricao": "Framework de código aberto em Python para criar e compartilhar aplicativos web para projetos de dados e IA."
+  },
+  {
+    "nome_da_ferramenta": "Netlify",
+    "link": "https://www.netlify.com/",
+    "classe_da_ferramenta": "Desenvolvimento",
+    "descricao": "Plataforma para hospedar e automatizar projetos web modernos, com integração contínua e deploy simplificado."
+  },
+  {
+    "nome_da_ferramenta": "OpenAI Platform",
+    "link": "https://platform.openai.com/",
+    "classe_da_ferramenta": "Desenvolvimento",
+    "descricao": "Plataforma para desenvolvedores acessarem os modelos de IA da OpenAI, como GPT-4, para construir aplicações."
+  },
+  {
+    "nome_da_ferramenta": "Stitch",
+    "link": "https://stitch.withgoogle.com/",
+    "classe_da_ferramenta": "Desenvolvimento",
+    "descricao": "Plataforma experimental do Google para construir e compartilhar projetos de IA de forma colaborativa."
+  },
+  {
+    "nome_da_ferramenta": "Imagica",
+    "link": "https://www.imagica.ai/",
+    "classe_da_ferramenta": "Desenvolvimento",
+    "descricao": "Plataforma que permite criar aplicativos e sistemas complexos de IA sem a necessidade de escrever código."
+  },
+  {
+    "nome_da_ferramenta": "Registro.br",
+    "link": "https://registro.br/",
+    "classe_da_ferramenta": "Desenvolvimento",
+    "descricao": "Entidade responsável pelo registro e manutenção de nomes de domínio que usam o .br."
+  },
+  {
+    "nome_da_ferramenta": "Kirvano",
+    "link": "https://kirvano.com/",
+    "classe_da_ferramenta": "E-commerce / Pagamentos",
+    "descricao": "Plataforma para produtores digitais venderem infoprodutos, com sistema de pagamentos integrado."
+  },
+  {
+    "nome_da_ferramenta": "Krisp",
+    "link": "https://krisp.ai/",
+    "classe_da_ferramenta": "Edição de Áudio",
+    "descricao": "Aplicativo que usa IA para remover ruídos de fundo em tempo real durante chamadas de voz e vídeo."
+  },
+  {
+    "nome_da_ferramenta": "Auphonic",
+    "link": "https://auphonic.com/",
+    "classe_da_ferramenta": "Edição de Áudio",
+    "descricao": "Serviço online de pós-produção de áudio que melhora a qualidade de gravações, nivelando volumes e reduzindo ruídos."
+  },
+  {
+    "nome_da_ferramenta": "Adobe Podcast",
+    "link": "https://podcast.adobe.com/pt",
+    "classe_da_ferramenta": "Edição de Áudio",
+    "descricao": "Ferramenta de IA da Adobe que melhora a qualidade da voz em gravações de áudio, removendo ruído de fundo."
+  },
+  {
+    "nome_da_ferramenta": "Kits.AI",
+    "link": "https://www.kits.ai/pt/",
+    "classe_da_ferramenta": "Edição de Áudio",
+    "descricao": "Plataforma de IA para músicos, permitindo criar e usar vozes de IA, além de separar vocais e instrumentos."
+  },
+  {
+    "nome_da_ferramenta": "same.energy",
+    "link": "https://www.same.energy/",
+    "classe_da_ferramenta": "Edição de Imagem",
+    "descricao": "Motor de busca visual que encontra imagens com estilo e atmosfera semelhantes à imagem de referência."
+  },
+  {
+    "nome_da_ferramenta": "Piktochart",
+    "link": "https://piktochart.com/",
+    "classe_da_ferramenta": "Edição de Imagem",
+    "descricao": "Plataforma para criar infográficos, apresentações, relatórios e outros conteúdos visuais com aparência profissional."
+  },
+  {
+    "nome_da_ferramenta": "Magnific AI",
+    "link": "https://magnific.ai/",
+    "classe_da_ferramenta": "Edição de Imagem",
+    "descricao": "Ferramenta de IA para melhorar a resolução (upscaling) e adicionar detalhes a imagens, tornando-as mais realistas."
+  },
+  {
+    "nome_da_ferramenta": "Upscayl",
+    "link": "https://upscayl.org/",
+    "classe_da_ferramenta": "Edição de Imagem",
+    "descricao": "Aplicativo de código aberto que utiliza IA para aumentar a resolução de imagens (upscaling) sem perder qualidade."
+  },
+  {
+    "nome_da_ferramenta": "DreamFace",
+    "link": "https://dreamfaceapp.com/",
+    "classe_da_ferramenta": "Edição de Imagem",
+    "descricao": "Aplicativo de IA para animar rostos em fotos, fazendo-os cantar ou falar."
+  },
+  {
+    "nome_da_ferramenta": "Ideogram",
+    "link": "https://ideogram.ai/t/explore",
+    "classe_da_ferramenta": "Edição de Imagem",
+    "descricao": "Gerador de imagens por IA com forte capacidade para renderizar texto de forma criativa dentro das imagens."
+  },
+  {
+    "nome_da_ferramenta": "Leonardo.Ai",
+    "link": "https://leonardo.ai/",
+    "classe_da_ferramenta": "Edição de Imagem",
+    "descricao": "Plataforma de IA focada na criação de ativos visuais para jogos, como texturas, objetos e artes conceituais."
+  },
+  {
+    "nome_da_ferramenta": "Midjourney",
+    "link": "https://www.midjourney.com/explore?tab=top",
+    "classe_da_ferramenta": "Edição de Imagem",
+    "descricao": "Um dos mais avançados geradores de imagem por IA, conhecido por criar resultados artísticos e de alta qualidade."
+  },
+  {
+    "nome_da_ferramenta": "Krea",
+    "link": "https://www.krea.ai/",
+    "classe_da_ferramenta": "Edição de Imagem",
+    "descricao": "Suíte criativa de IA que permite gerar imagens, padrões e realizar upscaling em tempo real."
+  },
+  {
+    "nome_da_ferramenta": "Pikzels",
+    "link": "https://pikzels.com/",
+    "classe_da_ferramenta": "Edição de Imagem",
+    "descricao": "Ferramenta de IA para gerar imagens e artes visuais a partir de descrições em texto."
+  },
+  {
+    "nome_da_ferramenta": "Piclumen",
+    "link": "https://www.piclumen.com/",
+    "classe_da_ferramenta": "Edição de Imagem",
+    "descricao": "Gerador de imagens por IA para criar fotos, ilustrações e artes visuais."
+  },
+  {
+    "nome_da_ferramenta": "Lucidpic",
+    "link": "https://lucidpic.com/",
+    "classe_da_ferramenta": "Edição de Imagem",
+    "descricao": "Ferramenta de IA para gerar fotos de pessoas e personagens que não existem, ideal para marketing e projetos."
+  },
+  {
+    "nome_da_ferramenta": "Luma AI",
+    "link": "https://lumalabs.ai/",
+    "classe_da_ferramenta": "Edição de Imagem",
+    "descricao": "Ferramenta que utiliza IA para criar modelos 3D realistas e cenas a partir de vídeos (NeRFs)."
+  },
+  {
+    "nome_da_ferramenta": "VideoHighlight",
+    "link": "https://videohighlight.com/",
+    "classe_da_ferramenta": "Edição de Vídeo",
+    "descricao": "Ferramenta para criar clipes curtos e destaques a partir de vídeos mais longos, ideal para redes sociais."
+  },
+  {
+    "nome_da_ferramenta": "CapCut",
+    "link": "https://www.capcut.com/pt-br/",
+    "classe_da_ferramenta": "Edição de Vídeo",
+    "descricao": "Editor de vídeo popular, disponível para desktop e mobile, com diversas funcionalidades e efeitos."
+  },
+  {
+    "nome_da_ferramenta": "Opus Pro",
+    "link": "https://www.opus.pro/",
+    "classe_da_ferramenta": "Edição de Vídeo",
+    "descricao": "Ferramenta de IA que transforma um vídeo longo em vários clipes curtos e virais, prontos para redes sociais."
+  },
+  {
+    "nome_da_ferramenta": "TopView.ai",
+    "link": "https://www.topview.ai/",
+    "classe_da_ferramenta": "Edição de Vídeo",
+    "descricao": "Ferramenta de IA que transforma um único vídeo em uma produção com múltiplos ângulos de câmera virtuais."
+  },
+  {
+    "nome_da_ferramenta": "VidGenie.ai",
+    "link": "https://app.vidgenie.ai/home",
+    "classe_da_ferramenta": "Edição de Vídeo",
+    "descricao": "Plataforma de IA para criação e edição de vídeos (acesso restrito ou link de login)."
+  },
+  {
+    "nome_da_ferramenta": "Kling AI",
+    "link": "https://klingai.com/",
+    "classe_da_ferramenta": "Edição de Vídeo",
+    "descricao": "Modelo de IA para geração de vídeo a partir de texto, capaz de criar clipes de alta fidelidade e longa duração."
+  },
+  {
+    "nome_da_ferramenta": "WOXO",
+    "link": "https://woxo.tech/",
+    "classe_da_ferramenta": "Edição de Vídeo",
+    "descricao": "Plataforma de IA para criar vídeos em lote a partir de planilhas ou templates, otimizando a produção de conteúdo."
+  },
+  {
+    "nome_da_ferramenta": "Dubsmart.ai",
+    "link": "https://dubsmart.ai/pt",
+    "classe_da_ferramenta": "Edição de Vídeo",
+    "descricao": "Ferramenta de IA para traduzir e dublar vídeos automaticamente para diferentes idiomas, com sincronização labial."
+  },
+  {
+    "nome_da_ferramenta": "123apps",
+    "link": "https://123apps.com/pt/",
+    "classe_da_ferramenta": "Edição Multimídia",
+    "descricao": "Conjunto de ferramentas online e gratuitas para editar vídeos, áudios, imagens e arquivos PDF."
+  },
+  {
+    "nome_da_ferramenta": "Convertio",
+    "link": "https://convertio.co/pt/wav-mp3/",
+    "classe_da_ferramenta": "Ferramentas",
+    "descricao": "Conversor de arquivos online que suporta uma vasta gama de formatos de áudio, vídeo, imagem e documentos."
+  },
+  {
+    "nome_da_ferramenta": "mLabs",
+    "link": "https://www.mlabs.com.br/",
+    "classe_da_ferramenta": "Ferramentas",
+    "descricao": "Plataforma brasileira para gerenciamento de múltiplas redes sociais, incluindo agendamento e análise de posts."
+  },
+  {
+    "nome_da_ferramenta": "GitMind",
+    "link": "https://gitmind.com/",
+    "classe_da_ferramenta": "Ferramentas",
+    "descricao": "Ferramenta online para criar mapas mentais, fluxogramas e brainstorms, com recursos de IA para geração de ideias."
+  },
+  {
+    "nome_da_ferramenta": "vidIQ",
+    "link": "https://vidiq.com/pt/",
+    "classe_da_ferramenta": "Ferramentas",
+    "descricao": "Ferramenta de análise e otimização para canais do YouTube, ajudando a aumentar visualizações e inscritos."
+  },
+  {
+    "nome_da_ferramenta": "Abacus.AI",
+    "link": "https://abacus.ai/",
+    "classe_da_ferramenta": "Ferramentas",
+    "descricao": "Plataforma de IA de ponta a ponta para empresas criarem e operacionalizarem sistemas de machine learning em tempo real."
+  },
+  {
+    "nome_da_ferramenta": "Voice In",
+    "link": "https://chromewebstore.google.com/detail/voice-in-ditado-de-voz-pa/pjnefijmagpdjfhhkpljicbbpicelgko",
+    "classe_da_ferramenta": "Ferramentas",
+    "descricao": "Extensão para Chrome que permite ditar texto em qualquer caixa de texto na web usando reconhecimento de voz."
+  },
+  {
+    "nome_da_ferramenta": "Forefront",
+    "link": "https://forefront.ai/",
+    "classe_da_ferramenta": "Finanças",
+    "descricao": "Plataforma que oferece fundos de investimento gerenciados por inteligência artificial."
+  },
+  {
+    "nome_da_ferramenta": "Madgicx",
+    "link": "https://madgicx.com/",
+    "classe_da_ferramenta": "Marketing / Anúncios",
+    "descricao": "Plataforma de IA para otimização de campanhas de anúncios em diversas plataformas, como Facebook e Google Ads."
+  },
+  {
+    "nome_da_ferramenta": "Google Journalist Studio",
+    "link": "https://journaliststudio.google.com/pinpoint/about/pt-BR_br/",
+    "classe_da_ferramenta": "Pesquisas",
+    "descricao": "Conjunto de ferramentas do Google para jornalistas, incluindo o Pinpoint para analisar grandes volumes de documentos."
+  },
+  {
+    "nome_da_ferramenta": "Ideanote",
+    "link": "https://ideanote.io/",
+    "classe_da_ferramenta": "Produtividade",
+    "descricao": "Plataforma para coletar, desenvolver e gerenciar ideias dentro de uma organização."
+  },
+  {
+    "nome_da_ferramenta": "Google Slides",
+    "link": "https://docs.google.com/presentation/",
+    "classe_da_ferramenta": "Produtividade",
+    "descricao": "Ferramenta online e colaborativa do Google para criar e editar apresentações de slides."
+  },
+  {
+    "nome_da_ferramenta": "Google Docs",
+    "link": "https://docs.google.com/",
+    "classe_da_ferramenta": "Produtividade",
+    "descricao": "Editor de textos online e colaborativo do Google, parte da suíte Google Workspace."
+  },
+  {
+    "nome_da_ferramenta": "GPT for Work",
+    "link": "https://gptforwork.com/",
+    "classe_da_ferramenta": "Produtividade",
+    "descricao": "Integração de modelos de IA (como o GPT) em ferramentas de trabalho, como Google Sheets e Docs."
+  },
+  {
+    "nome_da_ferramenta": "Napkin",
+    "link": "https://www.napkin.ai/",
+    "classe_da_ferramenta": "Produtividade",
+    "descricao": "Aplicativo para capturar, conectar e redescobrir suas ideias, funcionando como um 'segundo cérebro' com ajuda de IA."
+  },
+  {
+    "nome_da_ferramenta": "Granola",
+    "link": "https://www.granola.ai/",
+    "classe_da_ferramenta": "Produtividade",
+    "descricao": "Ferramenta de IA que participa de reuniões para tomar notas, destacando os pontos mais importantes da conversa."
+  },
+  {
+    "nome_da_ferramenta": "Fireflies.ai",
+    "link": "https://fireflies.ai/",
+    "classe_da_ferramenta": "Produtividade",
+    "descricao": "Assistente de IA que grava, transcreve e resume reuniões e conversas de áudio automaticamente."
+  },
+  {
+    "nome_da_ferramenta": "manus.im",
+    "link": null,
+    "classe_da_ferramenta": null,
+    "descricao": null
+  },
+  {
+    "nome_da_ferramenta": "geminichat",
+    "link": null,
+    "classe_da_ferramenta": null,
+    "descricao": null
+  },
+  {
+    "nome_da_ferramenta": "GPT",
+    "link": null,
+    "classe_da_ferramenta": null,
+    "descricao": null
+  },
+  {
+    "nome_da_ferramenta": "Deepkseek",
+    "link": null,
+    "classe_da_ferramenta": null,
+    "descricao": null
+  },
+  {
+    "nome_da_ferramenta": "Kimi",
+    "link": null,
+    "classe_da_ferramenta": null,
+    "descricao": null
+  },
+  {
+    "nome_da_ferramenta": "Lovable",
+    "link": null,
+    "classe_da_ferramenta": null,
+    "descricao": null
+  },
+  {
+    "nome_da_ferramenta": "Pixverse",
+    "link": null,
+    "classe_da_ferramenta": null,
+    "descricao": null
+  },
+  {
+    "nome_da_ferramenta": "Claude",
+    "link": null,
+    "classe_da_ferramenta": null,
+    "descricao": null
+  },
+  {
+    "nome_da_ferramenta": "GROK",
+    "link": null,
+    "classe_da_ferramenta": null,
+    "descricao": null
+  }
+]
