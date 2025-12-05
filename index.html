@@ -1,50 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inovar.App.Br - Micro-learning de TI para Concursos</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inovar.App.Br - Micro-learning de TI com IA</title>
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              brand: {
-                dark: '#0B1120',
-                card: '#161F32',
-                blue: '#3B82F6',
-                accent: '#FBBF24',
-              }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     </script>
+
     <style>
-      body {
-        background-color: #0B1120;
-        color: white;
-      }
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #2563eb, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
 </head>
-  <body>
+<body class="bg-slate-50 text-slate-900">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+
+    <script type="text/babel">
+        // Componentes de Ícones (Simulados para funcionar via CDN Lucide)
+        const Icon = ({ name, className }) => {
+            React.useEffect(() => {
+                lucide.createIcons();
+            }, []);
+            return <i data-lucide={name} className={className}></i>;
+        };
+
+        const Header = () => (
+            <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex justify-between items-center h-16">
+                        <div className="flex items-center gap-2">
+                            <div className="bg-brand-600 p-1.5 rounded-lg">
+                                <Icon name="cpu" className="w-6 h-6 text-white" />
+                            </div>
+                            <span className="font-bold text-xl tracking-tight text-slate-900">Inovar.App<span className="text-brand-600">.Br</span></span>
+                        </div>
+                        <div className="hidden md:flex space-x-8">
+                            <a href="#funcionalidades" className="text-slate-600 hover:text-brand-600 transition">Funcionalidades</a>
+                            <a href="#como-funciona" className="text-slate-600 hover:text-brand-600 transition">Como Funciona</a>
+                            <a href="#planos" className="text-slate-600 hover:text-brand-600 transition">Planos</a>
+                        </div>
+                        <button className="bg-slate-900 text-white px-5 py-2 rounded-full font-medium hover:bg-slate-800 transition shadow-lg hover:shadow-xl">
+                            Começar Agora
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        );
+
+        const Hero = () => (
+            <div className="relative overflow-hidden pt-20 pb-32">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-sm font-semibold mb-6 border border-brand-100">
+                        <span className="relative flex h-2 w-2">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+                        </span>
+                        Nova IA Disponível para Concursos 2025
+                    </div>
+                    <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-slate-900">
+                        Micro-learning de TI <br className="hidden md:block" />
+                        com <span className="gradient-text">Inteligência Artificial</span>
+                    </h1>
+                    <p className="mt-4 text-xl text-slate-600 max-w-2xl mx-auto mb-10">
+                        Otimize seus estudos para concursos de Tecnologia da Informação. 
+                        Conteúdos direto ao ponto, gerados por IA e validados por especialistas.
+                    </p>
+                    <div className="flex justify-center gap-4 flex-col sm:flex-row">
+                        <button className="px-8 py-4 bg-brand-600 text-white rounded-xl font-bold text-lg hover:bg-brand-700 transition shadow-lg shadow-brand-500/30 flex items-center justify-center gap-2">
+                            Criar Conta Grátis <Icon name="arrow-right" className="w-5 h-5" />
+                        </button>
+                        <button className="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-xl font-bold text-lg hover:bg-slate-50 transition flex items-center justify-center gap-2">
+                            <Icon name="play-circle" className="w-5 h-5" /> Ver Demo
+                        </button>
+                    </div>
+                </div>
+                
+                {/* Background Decoration */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
+                    <div className="absolute top-20 left-20 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+                    <div className="absolute top-20 right-20 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+                </div>
+            </div>
+        );
+
+        const FeatureCard = ({ icon, title, desc }) => (
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition group">
+                <div className="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-600 transition duration-300">
+                    <div className="text-brand-600 group-hover:text-white transition duration-300">
+                        {icon}
+                    </div>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-slate-900">{title}</h3>
+                <p className="text-slate-600 leading-relaxed">{desc}</p>
+            </div>
+        );
+
+        const Features = () => (
+            <section id="funcionalidades" className="py-24 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Tudo o que você precisa para ser aprovado</h2>
+                        <p className="text-slate-600 max-w-2xl mx-auto">Nossa plataforma combina a eficiência do micro-learning com o poder da IA generativa.</p>
+                    </div>
+                    <div className="grid md:grid-cols-3 gap-8">
+                        <FeatureCard 
+                            icon={<Icon name="zap" className="w-6 h-6" />}
+                            title="Aulas em Pílulas" 
+                            desc="Conteúdo fragmentado em tópicos essenciais de 5 a 10 minutos. Aprenda Python, SQL, Redes e Governança nos intervalos do seu dia."
+                        />
+                        <FeatureCard 
+                            icon={<Icon name="bot" className="w-6 h-6" />}
+                            title="Tutor IA 24h" 
+                            desc="Dúvidas sobre o edital ou uma questão específica? Nossa IA treinada em concursos de TI responde instantaneamente e gera exemplos de código."
+                        />
+                        <FeatureCard 
+                            icon={<Icon name="target" className="w-6 h-6" />}
+                            title="Trilhas Personalizadas" 
+                            desc="O sistema analisa seu desempenho e adapta o cronograma de estudos, focando nas suas fraquezas em Banco de Dados ou Segurança."
+                        />
+                    </div>
+                </div>
+            </section>
+        );
+
+        const Footer = () => (
+            <footer className="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+                <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div className="flex items-center gap-2">
+                        <Icon name="cpu" className="w-6 h-6 text-brand-500" />
+                        <span className="font-bold text-white text-xl">Inovar.App.Br</span>
+                    </div>
+                    <div className="text-sm">
+                        &copy; 2025 Innovar AI Learning. Todos os direitos reservados.
+                    </div>
+                    <div className="flex gap-6">
+                        <a href="#" className="hover:text-white transition"><Icon name="twitter" className="w-5 h-5" /></a>
+                        <a href="#" className="hover:text-white transition"><Icon name="instagram" className="w-5 h-5" /></a>
+                        <a href="#" className="hover:text-white transition"><Icon name="linkedin" className="w-5 h-5" /></a>
+                    </div>
+                </div>
+            </footer>
+        );
+
+        const App = () => (
+            <div>
+                <Header />
+                <Hero />
+                <Features />
+                <Footer />
+            </div>
+        );
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
 </html>
