@@ -1,32 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inovar.App.Br - Micro-learning de TI para Concursos com IA</title>
-    <meta name="description" content="Domine TI para concursos públicos com inteligência artificial. Receba resumos, tabelas comparativas e quizzes diários no seu e-mail. Estude menos, aprenda mais." />
-    <meta name="author" content="Inovar.App.Br" />
-    <meta name="keywords" content="concursos públicos, TI, tecnologia da informação, micro-learning, inteligência artificial, TCU, CGU, Banco Central, estudo para concursos" />
-    <link rel="canonical" href="https://inovar.app.br" />
-
-    <meta property="og:title" content="Inovar.App.Br - Micro-learning de TI para Concursos com IA" />
-    <meta property="og:description" content="Domine TI para concursos públicos com inteligência artificial. Receba resumos, tabelas comparativas e quizzes diários no seu e-mail." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://inovar.app.br" />
-    <meta property="og:image" content="https://inovar.app.br/og-image.png" />
-    <meta property="og:locale" content="pt_BR" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Inovar.App.Br - Micro-learning de TI para Concursos" />
-    <meta name="twitter:description" content="Domine TI para concursos públicos com IA. Resumos, tabelas e quizzes diários no seu e-mail." />
-    <meta name="twitter:image" content="https://inovar.app.br/og-image.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  </head>
-
+    <title>Inovar.App.Br - Micro-learning de TI para Concursos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#0B1120',
+                card: '#161F32',
+                blue: '#3B82F6',
+                accent: '#FBBF24',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0B1120;
+        color: white;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
