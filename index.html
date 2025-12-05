@@ -1,228 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferramentas de IA - Inovação Digital</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
-    <style>
-        :root {
-            --primary: hsl(69, 50%, 52%);
-            --secondary: #4A5568;
-            --accent: #9F7AEA;
-            --background: #1A202C;
-        }
-        body {
-            background-color: var(--background);
-            color: #E2E8F0;
-            background-image: url('background.svg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        .hero-section {
-            background: linear-gradient(135deg, rgba(107, 70, 193, 0.8) 0%, rgba(159, 122, 234, 0.8) 100%);
-            position: relative;
-            overflow: hidden;
-            min-height: 25vh;
-        }
-        .hero-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, rgba(0,0,0,0.2) 25%, transparent 25%),
-                        linear-gradient(-45deg, rgba(0,0,0,0.2) 25%, transparent 25%),
-                        linear-gradient(45deg, transparent 75%, rgba(0,0,0,0.2) 75%),
-                        linear-gradient(-45deg, transparent 75%, rgba(0,0,0,0.2) 75%);
-            background-size: 20px 20px;
-            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-            animation: backgroundMove 2s linear infinite;
-        }
-        @keyframes backgroundMove {
-            0% { background-position: 0 0, 0 10px, 10px -10px, -10px 0px; }
-            100% { background-position: 20px 0, 20px 10px, 30px -10px, 10px 0px; }
-        }
-        .tool-card {
-            background: rgba(74, 85, 104, 0.2);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-        .tool-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-            border-color: var(--accent);
-        }
-        .category-title {
-            color: var(--accent);
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-        .nav-link {
-            position: relative;
-            color: #E2E8F0;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: var(--accent);
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover::after {
-            width: 100%;
-        }
-    </style>
-</head>
-<body class="min-h-screen" hx-boost="true">
-    <!-- Cabeçalho -->
-    <header class="bg-gray-900 shadow-lg fixed w-full top-0 z-50">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <h1 class="text-2xl font-bold text-white">Ferramentas de IA</h1>
-                <div class="space-x-6">
-                    <a href="#ferramentas" class="nav-link">Ferramentas</a>
-                    <a href="#contato" class="nav-link">Contato</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inovar.App.Br - Micro-learning de TI para Concursos com IA</title>
+    <meta name="description" content="Domine TI para concursos públicos com inteligência artificial. Receba resumos, tabelas comparativas e quizzes diários no seu e-mail. Estude menos, aprenda mais." />
+    <meta name="author" content="Inovar.App.Br" />
+    <meta name="keywords" content="concursos públicos, TI, tecnologia da informação, micro-learning, inteligência artificial, TCU, CGU, Banco Central, estudo para concursos" />
+    <link rel="canonical" href="https://inovar.app.br" />
 
-    <!-- Hero Section -->
-    <section class="hero-section min-h-screen flex items-end justify-center relative">
-        <div class="text-center px-2 z-10">
-            <h2 class="text-5xl font-bold text-white ">Descubra o Poder da IA</h2>
-            <p class="text-xl text-gray-200 ">Uma curadoria das melhores ferramentas de Inteligência Artificial para transformar sua produtividade</p>
-        </div>
-    </section>
+    <meta property="og:title" content="Inovar.App.Br - Micro-learning de TI para Concursos com IA" />
+    <meta property="og:description" content="Domine TI para concursos públicos com inteligência artificial. Receba resumos, tabelas comparativas e quizzes diários no seu e-mail." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://inovar.app.br" />
+    <meta property="og:image" content="https://inovar.app.br/og-image.png" />
+    <meta property="og:locale" content="pt_BR" />
 
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Inovar.App.Br - Micro-learning de TI para Concursos" />
+    <meta name="twitter:description" content="Domine TI para concursos públicos com IA. Resumos, tabelas e quizzes diários no seu e-mail." />
+    <meta name="twitter:image" content="https://inovar.app.br/og-image.png" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
 
-    <!-- Ferramentas -->
-    <section id="ferramentas" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16 text-white">Ferramentas em Destaque</h2>
-            <div id="ferramentas-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Cards serão inseridos aqui via JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <script>
-        // Constantes e configurações
-        const FERRAMENTAS_GRID_ID = 'ferramentas-grid';
-        const ERRO_CARREGAMENTO = 'Ocorreu um erro ao carregar as ferramentas.';
-        const CLASSES_CARD = {
-            container: 'tool-card p-6 rounded-lg',
-            titulo: 'text-xl font-bold text-white mb-2',
-            descricao: 'text-gray-300 mb-4',
-            rodape: 'flex justify-between items-center',
-            categoria: 'text-accent',
-            link: 'text-white hover:text-accent transition-colors'
-        };
-
-        // Função para criar um card de ferramenta
-        const criarCardFerramenta = ({ nome_da_ferramenta, descricao, classe_da_ferramenta, link }) => {
-            if (!nome_da_ferramenta) return '';
-            
-            return `
-                <div class="${CLASSES_CARD.container}">
-                    <h3 class="${CLASSES_CARD.titulo}">${nome_da_ferramenta}</h3>
-                    <p class="${CLASSES_CARD.descricao}">${descricao || 'Descrição não disponível'}</p>
-                    <div class="${CLASSES_CARD.rodape}">
-                        <span class="${CLASSES_CARD.categoria}">${classe_da_ferramenta || 'Não categorizado'}</span>
-                        ${link ? `<a href="${link}" target="_blank" class="${CLASSES_CARD.link}">Acessar →</a>` : ''}
-                    </div>
-                </div>
-            `;
-        };
-
-        // Função para exibir mensagem de erro
-        const exibirErro = (mensagem) => {
-            const grid = document.getElementById(FERRAMENTAS_GRID_ID);
-            grid.innerHTML = `
-                <div class="col-span-full text-center text-red-500">
-                    ${mensagem}
-                </div>
-            `;
-        };
-
-        // Função para renderizar os cards das ferramentas
-        const renderizarFerramentas = (ferramentas) => {
-            const grid = document.getElementById(FERRAMENTAS_GRID_ID);
-            grid.innerHTML = ferramentas
-                .filter(ferramenta => ferramenta.nome_da_ferramenta && ferramenta.classe_da_ferramenta)
-                .map(criarCardFerramenta)
-                .join('');
-        };
-
-        // Função principal para carregar e exibir as ferramentas
-        const inicializarFerramentas = async () => {
-            try {
-                const response = await fetch('/Ferramentas.json');
-                if (!response.ok) throw new Error('Erro ao carregar o arquivo de ferramentas');
-                
-                const ferramentas = await response.json();
-                renderizarFerramentas(ferramentas);
-            } catch (erro) {
-                console.error('Erro:', erro);
-                exibirErro(ERRO_CARREGAMENTO);
-            }
-        };
-
-        // Inicializa o carregamento das ferramentas quando a página carregar
-        window.addEventListener('load', inicializarFerramentas);
-    </script>
-
-    <!-- Contato -->
-    <section id="contato" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 text-white">Contato</h2>
-            <div class="max-w-lg mx-auto">
-                <div class="flex flex-col space-y-6">
-                    <a href="mailto:edmilsonve@gmail.com" class="tool-card p-4 rounded-lg flex items-center text-white hover:text-accent transition-colors">
-                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                        </svg>
-                        edmilsonve@gmail.com
-                    </a>
-                    <a href="https://www.linkedin.com/in/edmilson-borges-36362871/" target="_blank" class="tool-card p-4 rounded-lg flex items-center text-white hover:text-accent transition-colors">
-                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
-                        </svg>
-                        LinkedIn
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-8">
-        <div class="container mx-auto px-6 text-center text-gray-400">
-            <p>&copy; Julho/2025. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

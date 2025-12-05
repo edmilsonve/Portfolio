@@ -1,88 +1,73 @@
-# Portfólio Profissional
+# Welcome to your Lovable project
 
-Este é o meu portfólio profissional, desenvolvido com HTML5, HTMX e CSS (Tailwind CSS).
+## Project info
 
-## Características
+**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
-- Design responsivo e moderno
-- Interface interativa sem botões
-- Animações suaves e elegantes
-- Carregamento dinâmico de conteúdo com HTMX
-- Seções para apresentação, projetos e contato
-- Integração com LinkedIn
-- Efeitos de hover e transições
-- Scroll suave
-- Animações de entrada nas seções
+## How can I edit this code?
 
-## Como Visualizar
+There are several ways of editing your application.
 
-1. Clone este repositório
-2. Abra o arquivo `index.html` em seu navegador
+**Use Lovable**
 
-## Tecnologias Utilizadas
+Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
-- HTML5
-- HTMX para interatividade
-- CSS3 (Tailwind CSS)
-- JavaScript (Intersection Observer API)
-- SVG para ícones
+Changes made via Lovable will be committed automatically to this repo.
 
-## Hospedagem
+**Use your preferred IDE**
 
-Este portfólio está hospedado no GitHub Pages e pode ser acessado em: [https://edmilsonve.github.io/Portfolio/](https://edmilsonve.github.io/Portfolio/)
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-## Contato
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-- LinkedIn: [Edmilson Borges](https://www.linkedin.com/in/edmilson-borges-36362871/)
-- Email: edmilson.borges@exemplo.com
+Follow these steps:
 
-## Requisitos
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-- Python 3.8 ou superior
-- pip (gerenciador de pacotes Python)
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-## Instalação
+# Step 3: Install the necessary dependencies.
+npm i
 
-1. Clone este repositório ou baixe os arquivos
-2. Navegue até a pasta do projeto
-3. Crie um ambiente virtual (recomendado):
-```bash
-python -m venv venv
-.\venv\Scripts\activate  # No Windows
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
 ```
 
-4. Instale as dependências:
-```bash
-pip install -r requirements.txt
-```
+**Edit a file directly in GitHub**
 
-## Executando o Projeto
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-1. Com o ambiente virtual ativado, execute:
-```bash
-python app.py
-```
+**Use GitHub Codespaces**
 
-2. Abra seu navegador e acesse:
-```
-http://localhost:5000
-```
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## Personalizando
+## What technologies are used for this project?
 
-Para personalizar o portfólio:
+This project is built with:
 
-1. Edite o arquivo `templates/index.html`:
-   - Altere "Seu Nome" para seu nome real
-   - Atualize os links de redes sociais
-   - Modifique a seção "Sobre Mim"
-   - Adicione seus próprios projetos na seção "Projetos"
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-2. Adicione suas próprias imagens e conteúdo
+## How can I deploy this project?
 
-## Tecnologias Utilizadas
+Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
-- Python Flask
-- TailwindCSS
-- HTML5
-- CSS3
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
